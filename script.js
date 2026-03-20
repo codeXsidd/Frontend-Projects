@@ -2,7 +2,7 @@ const rowEl = document.getElementById("rowEl");
 
 // Function to fetch data from api and send to manageData().
 function getData(){
-fetch('https://api.github.com/repos/devvsakib/Frontend-Projects/contents')
+fetch('https://api.github.com/repos/codeXsidd/Frontend-Projects/contents')
     .then(response => response.json()
     )
     .then(data => {
@@ -24,7 +24,7 @@ function manageData(data){
             rowEl.innerHTML += `
             <div class="column">
                 <div id = "card-${idx}" class="card">
-                    <form action='https://devvsakib.github.io/Frontend-Projects/${array.name}'>
+                    <form action='https://codeXsidd.github.io/Frontend-Projects/${array.name}'>
                         <input id="button-29" class="button-29" type="submit" value="${array.name}" />
                     </form>
                     
